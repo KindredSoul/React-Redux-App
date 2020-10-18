@@ -16,11 +16,15 @@ const JokesContainer = (props) => {
 					<div
 						style={{
 							display: "flex",
+							flexWrap: "wrap",
 							justifyContent: "space-around",
 							alignItems: "center",
 						}}>
 						{props.categories.map((category) => (
 							<button
+								style={{
+									margin: "3% 10%",
+								}}
 								key={category}
 								onClick={(e) => {
 									e.preventDefault();
